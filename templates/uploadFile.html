@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/www/css/silver-bullet.css">
+    <title>pRinter</title>
+</head>
+
+<body>
+    <h1>{{ .title }}</h1>
+
+    <form name="uploadOrPrint" method="post" enctype="multipart/form-data">
+        <span>username：</span> <input type="text" name="name"><br>
+        <span class="file-label">file：</span> <input type="file" name="file"><br><br>
+        <button class="input-print" onclick="printFile()"> print </button>
+        <button class="input-upload" onclick="uploadFile()"> upload </button>
+    </form>
+    </br>
+    <hr align=center color=#987cb9 SIZE=5>
+    <h2>更新</h2>
+    <p>2022-12-01：</p>
+    <ul> 
+        <li>支持打印 PDF 文件 <strong>（推荐）</strong></li>
+        <li>支持仅上传文件</li>
+        <li>支持任意文件名</li>
+    </ul>
+    <script src="/www/js/index.js" async></script>
+</body>
+
+</html>
